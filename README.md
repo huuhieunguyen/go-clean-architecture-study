@@ -78,3 +78,20 @@ The provided code for the `main.go` file is the entry point of the application a
 - Finally, it starts the Gin router and listens for incoming HTTP requests.
 
 The `main.go` file is the entry point of the application and handles setting up the database connection, defining routes, and starting the HTTP server. It acts as the "glue" between the different layers of the Clean Architecture, connecting the "Interface Adapters" layer with the "Business Rules" and "Entities" layers.
+
+# Use Postman to test routes
+
+#### Create a todo item
+![Create a Todo item](./img/create_item.png)
+
+#### Get a todo item by ID
+![Get by ID](./img/get_by_id.png)
+
+#### Get all todo items
+![Get all](./img/get_all.png)
+
+#### Update a todo item by ID
+![Update](./img/update_item.png)
+
+#### Delete a todo item by ID
+![Delete](./img/delete.png)
