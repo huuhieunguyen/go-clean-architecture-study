@@ -6,7 +6,22 @@
 
 # Explain the project
 
+## Entities
+
+#### ToDoItem
+The provided code for the item model belongs to the "Entities" layer in the Clean Architecture. Here's a breakdown of the code:
+
+- The `ToDoItem` struct represents the item model. It contains properties such as `Id`, `Title`, `Status`, `CreatedAt`, and `UpdatedAt`.
+
+- The `TableName` method is used to specify the table name in the database where the item model will be stored. In this case, it returns "todo_items".
+
+- The `Validate` method is responsible for validating the item model. It checks if the `Title` field is empty and returns an error if it is.
+
+The item model encapsulates the core data and behavior related to an item in the system. It does not depend on any external frameworks or tools, making it an essential part of the "Entities" layer.
+
 ## Business
+
+#### create_new_item.go
 The provided code for the `create_new_item.go` file belongs to the "Business Rules" layer in the Clean Architecture. Here's a breakdown of the code:
 
 - The `CreateTodoItemStorage` interface defines the contract for the storage component responsible for creating new items. It declares a single method `CreateItem` that takes a context and a `ToDoItem` as input and returns an error.
