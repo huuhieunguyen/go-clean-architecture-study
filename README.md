@@ -110,3 +110,8 @@ The `main.go` file is the entry point of the application and handles setting up 
 
 #### Delete a todo item by ID
 ![Delete](./img/delete.png)
+
+## Reference
+[200lab-Education's repository][site]
+
+[site]: https://github.com/200lab-Education/tutorial-golang-rest-api-todo-list/tree/feature/apply-clean-architecture
